@@ -23,12 +23,12 @@ This POC covers:
 
 All detailed guides and explanations are organized inside the `/docs` directory. Below is a summary of the main documentation files with brief descriptions:
 
-| Document                     | Description                                                                                   |
-| ---------------------------- | --------------------------------------------------------------------------------------------- |
-| [01_intro.md](./docs/01_intro.md)               | Introduction to Chaos Engineering, project goals, and overview of the tools used              |
+| Document                                                      | Description                                                                                   |
+| ------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| [01_goal_of_the_poc.md](./docs/01_goal_of_the_poc.md)         | Introduction to Chaos Engineering, project goals, and overview of the tools used              |
 | [02_install_environment.md](./docs/02_install_environment.md) | Step-by-step instructions to install k3s, Helm, Chaos Mesh, Litmus, and auxiliary tools       |
-| [03_chaos_testing.md](./docs/03_chaos_testing.md)        | How to write and run chaos experiments using Chaos Mesh and Litmus, plus interpreting results |
-| [04_cleanup.md](./docs/04_cleanup.md)              | Guidelines to clean up your Kubernetes environment and uninstall the chaos tools              |
+| [03_chaos_testing.md](./docs/03_chaos_testing.md)             | How to write and run chaos experiments using Chaos Mesh and Litmus, plus interpreting results |
+| [04_poc_result.md](./docs/04_cleanup.md)                      | Result of the POC and define tool preferences                                                 |
 
 ---
 
