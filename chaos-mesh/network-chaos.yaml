@@ -1,0 +1,20 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: Schedule
+metadata:
+  name: nginx-network-loss
+  namespace: chaos-mesh
+spec:
+  schedule: "0 0 31 2 *" 
+  concurrencyPolicy: "Forbid"
+  type: NetworkChaos
+  networkChaos:
+    selector:
+      namespaces: [test-app]
+      labelSelectors:
+        app: nginx
+    action: loss
+    mode: all
+    loss:
+      loss: "80"
+      correlation: "0"
+    duration: "20s"

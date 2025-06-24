@@ -1,0 +1,20 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: Schedule
+metadata:
+  name: nginx-cpu-stress
+  namespace: chaos-mesh
+spec:
+  schedule: "0 0 31 2 *" 
+  #schedule: "@every 1m"
+  concurrencyPolicy: "Forbid"
+  type: StressChaos
+  stressChaos:
+    selector:
+      namespaces: [test-app]
+      labelSelectors:
+        app: nginx
+    mode: all
+    stressors:
+      cpu:
+        workers: 20
+    duration: "60s"
