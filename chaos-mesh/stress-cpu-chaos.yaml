@@ -4,8 +4,7 @@ metadata:
   name: nginx-cpu-stress
   namespace: chaos-mesh
 spec:
-  schedule: "0 0 31 2 *" 
-  #schedule: "@every 1m"
+  schedule: "0 0 31 2 *"
   concurrencyPolicy: "Forbid"
   type: StressChaos
   stressChaos:

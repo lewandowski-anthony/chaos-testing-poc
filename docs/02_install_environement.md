@@ -195,6 +195,8 @@ Feel free to start experimenting with chaos scenarios to build resilience and be
 
 Happy chaos testing! 💥
 
-<p align="left">
-  <a href="./01_goal_of_the_poc.md">← Previous page</a>
-</p>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <a href="./01_goal_of_the_poc.md">← Previous page : Goal of the POC</a>
+  <a href="./README.md" style="margin: 0 10px;">Back to README</a>
+  <a href="./03_chaos_testing.md">Next page : Chaos Testing →</a>
+</div>

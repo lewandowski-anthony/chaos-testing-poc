@@ -1,0 +1,49 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: Workflow
+metadata:
+  name: full-nginx-chaos-workflow
+  namespace: chaos-mesh
+spec:
+  entry: main-sequence
+  templates:
+    - name: main-sequence
+      templateType: Serial
+      deadline: 60s
+      children:
+        - nginx-chaos-sequence
+
+    - name: nginx-pod-failure
+      templateType: PodChaos
+      deadline: 10s
+      podChaos:
+        selector:
+          namespaces:
+            - test-app
+          labelSelectors:
+            app: nginx
+        mode: all
+        action: pod-failure
+
+    - name: nginx-network-delay
+      templateType: NetworkChaos
+      deadline: 10s
+      networkChaos:
+        selector:
+          namespaces:
+            - test-app
+          labelSelectors:
+            app: nginx
+        mode: all
+        action: delay
+        delay:
+          latency: 1000ms
+          jitter: 100ms
+          correlation: "25"
+        direction: to
+
+    - name: nginx-chaos-sequence
+      templateType: Serial
+      deadline: 10s
+      children:
+        - nginx-pod-failure
+        - nginx-network-delay

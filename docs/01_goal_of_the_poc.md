@@ -66,7 +66,7 @@ Below is a comprehensive list of the key software and environment versions used 
 
 This environment setup and tool selection enable an effective and practical chaos engineering workflow on lightweight Kubernetes, allowing us to explore fault injection experiments that simulate real-world failures and observe system resilience.
 
-
-<p align="right">
-  <a href="./02_install_environement.md">Next page →</a>
-</p>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <a href="./README.md" style="margin: 0 10px;">Back to README</a>
+  <a href="./02_install_environement.md">Next page : Install Environement →</a>
+</div>
