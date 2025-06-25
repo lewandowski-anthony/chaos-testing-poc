@@ -1,7 +1,7 @@
-# 🚀 Chaos Engineering Environment Setup with K3s, Chaos Mesh, and Litmus
+# Chaos Testing with Chaos Mesh and Litmus
 
 ## 📜 Table of content
-- [🚀 Chaos Engineering Environment Setup with K3s, Chaos Mesh, and Litmus](#-chaos-engineering-environment-setup-with-k3s-chaos-mesh-and-litmus)
+- [Chaos Testing with Chaos Mesh and Litmus](#chaos-testing-with-chaos-mesh-and-litmus)
   - [📜 Table of content](#-table-of-content)
   - [✅ Prerequisites](#-prerequisites)
   - [🛠️ Installation](#️-installation)
@@ -195,8 +195,5 @@ Feel free to start experimenting with chaos scenarios to build resilience and be
 
 Happy chaos testing! 💥
 
-<div style="display: flex; justify-content: space-between; align-items: center;">
-  <a href="./01_goal_of_the_poc.md">← Previous page : Goal of the POC</a>
-  <a href="./README.md" style="margin: 0 10px;">Back to README</a>
-  <a href="./03_chaos_testing.md">Next page : Chaos Testing →</a>
-</div>
+| [← Previous page : Goal of the POC](./01_goal_of_the_poc.md) | [Back to README](../README.md) | [Next page : Chaos Testing →](./03_chaos_testing.md) |
+| ------------------------------------------------------------ | ------------------------------ | ---------------------------------------------------- |
